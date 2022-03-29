@@ -18,7 +18,7 @@ function sendSMS(from, to, body) {
 }
 
 sendSMS(
-  "8644208998",
+  process.env.TWILIO_PHONE_NUMBER,
   process.env.TO_PHONE_NUMBER,
   "This is an SMS notification!"
 );
