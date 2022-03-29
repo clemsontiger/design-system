@@ -17,8 +17,16 @@ function sendSMS(from, to, body) {
     });
 }
 
+
+module.exports = async (req, res) => {
+
+
 sendSMS(
   process.env.TWILIO_PHONE_NUMBER,
   process.env.TO_PHONE_NUMBER,
-  "This is an SMS notification!"
+  "This is another SMS notification!"
 );
+
+res.status(200).json({'test': 'test2'});
+
+};

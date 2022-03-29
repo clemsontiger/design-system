@@ -10,7 +10,7 @@
   "author": "Phil Nash <philnash@twilio.com> (https://philna.sh)",
   "license": "MIT",
   "dependencies": {
+    "busboy": "^1.5.0",
     "twilio": "^3.55.1"
-  },
-  "devDependencies": {}
+  }
 }
